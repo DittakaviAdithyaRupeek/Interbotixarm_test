@@ -1,0 +1,17 @@
+<launch>
+    <arg name="use_sim"           default="false"/>
+    <arg name="show_currents"     default="false"/>
+    <arg name="robot_model"       default="wx250s"/>
+
+    <include file="$(find interbotix_xsarm_control)/launch/xsarm_control.launch">
+      <arg name="robot_model"   value="wx250s"/>
+      <arg name="use_sim"       value="$(arg use_sim)"/>
+    </include>
+
+    <node name="arm_joystick_controller"   pkg="interbotixarm" type="joystick_control.py" output="screen" respawn="true"/>
+    <node name = "robot_service_helper" pkg="interbotixarm" type="service_helper.py" output="screen" respawn="true" args="'wx250s'"/>
+    <group if="$(arg show_currents)">
+      <node name="wx250s_current_visualizer" pkg="interbotixarm" type="currentviz.py"       output="screen" respawn="false"/>
+    </group>
+
+</launch>

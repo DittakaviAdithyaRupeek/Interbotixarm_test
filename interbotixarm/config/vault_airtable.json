@@ -1,0 +1,122 @@
+{
+    "base_id":"appFwQfab9nZ0P8zd",
+    "table_id":"tblpFuit1NIryF9fp",
+    "columns": {
+        "1": {
+            "name": "TimeStamp",
+            "type": "str"
+        },
+        "2": {
+            "name": "JewelType",
+            "type": "str"
+        },
+        "3": {
+            "name": "Initialize",
+            "type": "float"
+        },
+        "4": {
+            "name": "top_of_tray",
+            "type": "float"
+        },
+        "5": {
+            "name": "pickup_from_tray",
+            "type": "float"
+        },
+        "6": {
+            "name": "clearing",
+            "type": "float"
+        },
+        "7": {
+            "name": "top_of_wm",
+            "type": "float"
+        },
+        "8": {
+            "name": "pickup_from_wm",
+            "type": "float"
+        },
+        "9": {
+            "name": "top_of_wm_2",
+            "type": "float"
+        },
+        "10": {
+            "name": "clearing_2",
+            "type": "float"
+        },
+        "11": {
+            "name": "front_image",
+            "type": "float"
+        },
+        "12": {
+            "name": "clearing_3",
+            "type": "float"
+        },
+        "13": {
+            "name": "top_image",
+            "type": "float"
+        },
+        "14": {
+            "name": "top_of_wm_3",
+            "type": "float"
+        },
+        "15": {
+            "name": "pickup_from_wm_2",
+            "type": "float"
+        },
+        "16": {
+            "name": "top_of_wm_4",
+            "type": "float"
+        },
+        "17": {
+            "name": "top_of_tray_2",
+            "type": "float"
+        },
+        "18": {
+            "name": "pickup_from_tray_2",
+            "type": "float"
+        },
+        "19": {
+            "name": "top_of_tray_3",
+            "type": "float"
+        },
+        "20": {
+            "name": "total_time",
+            "type": "float"
+        },
+        "21": {
+            "name": "js_1",
+            "type": "float"
+        },
+        "22": {
+            "name": "js_2",
+            "type": "float"
+        },
+        "23": {
+            "name": "js_3",
+            "type": "float"
+        },
+        "24": {
+            "name": "js_4",
+            "type": "float"
+        },
+        "25": {
+            "name": "task_1",
+            "type": "float"
+        },
+        "26": {
+            "name": "task_2",
+            "type": "float"
+        },
+        "27": {
+            "name": "task_3",
+            "type": "float"
+        },
+        "28": {
+            "name": "task_4",
+            "type": "float"
+        },
+        "29": {
+            "name": "task_5",
+            "type": "float"
+        }
+    }
+}

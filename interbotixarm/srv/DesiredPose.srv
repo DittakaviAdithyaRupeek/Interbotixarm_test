@@ -1,0 +1,5 @@
+# Go To Sleep Command
+
+bool enable
+float32[] cmd
+---

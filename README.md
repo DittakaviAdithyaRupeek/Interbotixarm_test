@@ -1,1 +1,1 @@
-# Interbotixarm_test
+Install librealsense on Xavier - https://lieuzhenghong.com/how_to_install_librealsense_on_the_jetson_nx/
