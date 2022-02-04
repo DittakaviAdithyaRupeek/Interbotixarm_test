@@ -1,0 +1,20 @@
+<launch>
+    <node name='MQTT2ROS_Streamer' pkg='armstack' type='mqtt2ros_streamer_node' output="screen" respawn="true">
+      <param name="MQTT_NAME"       type="str"  value="RAM-1" />
+      <param name="MQTT_HOST"       type="str"  value="stupendous-judge.cloudmqtt.com" />
+      <param name="MQTT_PORT"       type="int"  value="1883" />
+      <param name="MQTT_QOS"        type="int"  value="1" />
+      <param name="MQTT_KEEPALIVE"  type="int"  value="60" />
+      <param name="MQTT_USERNAME"   type="str"  value="fghgfgmx" />
+      <param name="MQTT_PASSWORD"   type="str"  value="tpzuKXTIiALR" />
+      <param name="MQTT_TOPIC"      type="str"  value="/Rupeek/271ad7b8e9f94cc0a1e648d5fc6d6ab5/remote" />
+    </node>
+
+    <node name="arm_joystick_controller" pkg="armstack"  type="joystick_control.py" output="screen" respawn="true"/>
+
+    <include file="$(find interbotix_xsarm_control)/launch/xsarm_control.launch">
+      <arg name="robot_model"   value="wx250s"/>
+      <arg name="use_sim"       value="true"/>
+    </include>
+
+</launch>
